@@ -1,0 +1,66 @@
+/* Reset universale per gestire meglio le dimensioni */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: skyblue;
+    color: darkblue;
+    /* "Times New Roman" va tra virgolette perché contiene spazi */
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px; /* Meglio usare max-width per i dispositivi mobili */
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+#imgprofile {
+    display: block; /* Necessario per far funzionare margin: auto sulle immagini */
+    max-width: 150px; /* Modifica a piacimento */
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+h1 { 
+    color: purple;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 900; /* Il massimo standard è 900, 2000 non esiste */
+    letter-spacing: 1px;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}	
+
+a {
+    text-decoration: none;
+    color: purple;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transizione fluida per l'hover */
+}	
+
+a:hover {
+    color: grey;
+}
+
+/* Stile unico per la card (pulito dalle ridondanze) */
+.card-lightblue {
+    background-color: rgba(255, 255, 255, 0.5); /* Sfondo semi-trasparente per leggibilità */
+    border: 2px solid deepskyblue;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+
+    
+    display: flex;          /* Attiva il layout flessibile */
+    flex-direction: column; /* Mette gli elementi uno sotto l'altro */
+    align-items: center;    /* Centra orizzontalmente gli elementi */
+    text-align: center;     /* Centra il testo all'interno dei paragrafi */
+
+}
